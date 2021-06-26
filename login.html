@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+      
+      <form method="POST" action="#" id="loginForm">
+        <a href="home.html"><img src="images/logo_white.png" alt="logo" /></a>
+        
+        <p id="welcome_msg">Welcome !</p>
+
+        <div class="input_div">
+          <i class="far fa-user"></i>
+          <input type="text" name='userName' placeholder="Username / Email" class="input_box" id="userName" />
+        </div>
+
+        <div class="input_div">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password" placeholder="Password" class="input_box" id="password" />
+        </div>
+
+        <p id="error_msg">Invalid username/ password</p>
+
+        <p id="sub_text">New user? Sign Up <a href="" id="signup_but">here</a></p>
+
+        <input type="button" value="LOGIN" id="login_btn" onclick="validate()"/>
+      </form>
+  </body>
+
+  <script src="https://kit.fontawesome.com/2d96acc290.js" crossorigin="anonymous"></script>
+  <script src="js/user_data.js"></script>
+  <script src="js/login.js"></script>
+</html>

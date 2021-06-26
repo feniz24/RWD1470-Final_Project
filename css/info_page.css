@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-image: url('../images/info_bg.jpg');
+}
+
+nav {
+  background-color: #fbfbfd;
+}
+
+#logo {
+  margin-left: 48%;
+  width: 80px;
+}
+.flex_container {
+  display: flex;
+  margin-top: 5%;
+}
+.navBox {
+  border-right: 2px solid #707070;
+  width: 33%;
+  text-align: center;
+}
+#profile_pic {
+  width: 30%;
+  margin-left: 35%;
+  border-radius: 50%;
+}
+.nav_item {
+  cursor: pointer;
+  color: #222831;
+  display: block;
+  font-size: 1.5rem;
+  margin: 30px;  
+  text-decoration: none;
+}
+.nav_item:hover {
+  color: black;
+  font-size: 1.6rem;
+  text-decoration: underline #707070;
+}
+#shop_but{
+  color: purple;
+  border: 2px solid;
+}
+#shop_but:hover{
+  color: #fbfbfd;
+  background-color: #222831;
+  text-decoration: none;
+}
+.icon {
+  color: #222831;
+  display: none;
+}
+#info_box {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10%;
+}
+#information_box,
+#cart_box,
+#wishlist_box {
+  border-bottom: 1px solid black;
+  margin-left: 20px;
+}
+.info_label {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.info_item {
+  border: 1px solid;
+  box-shadow: 1px 2px #70706a;
+  border-radius: 5px;
+  font-style: italic;
+  margin-bottom: 25px;
+  padding: 15px 0px 15px 10px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 300px;
+}
+#cart_box,
+#wishlist_box {
+  display: none;
+  margin-top: 40px;
+}
+.cart_items {
+  width: 50px;
+}
+.cart_list,
+.wishlist {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#cart_box p,
+#wishlist_box p {
+  display: inline;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  #logo{
+    margin-left: 0%;
+  }
+  nav {
+    text-align: center;
+  }
+  .navBox {
+    display: none;
+    padding-right: 30px;
+  }
+  .nav_item {
+    float: none;
+    font-size: 1.3rem;
+  }
+  .nav_item:hover{
+    font-size: 1.3rem;
+  }
+  .responsive {
+    background-color: #fbfbfd;
+    display: block;
+    float: none;
+    opacity: 0.8;
+  }
+  #profile_pic {
+    width: 70%;
+  }
+  .icon {
+    display: block;
+    float: left;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+  #info_box {
+    margin-left: 20%;
+  }
+  .info_item {
+    width: 250px;
+  }
+}

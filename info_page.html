@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info</title>
+    <link rel="stylesheet" href="css/info_page.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="home.html"
+        ><img id="logo" src="images/logo_black.png" alt="logo"
+      /></a>
+    </nav>
+    <div class="flex_container">
+      <div id="user_box" class="navBox">
+        <img id="profile_pic" class="nav_item" src="images/guest.png" alt="profile_pic" />
+        <a class="nav_item"  onclick="showInfo()">Information</a>
+        <a class="nav_item" onclick="showCart()">Cart</a>
+        <a class="nav_item" onclick="showWishlist()">Wishlist</a>
+        <a class="nav_item" id="shop_but" href="home.html">Let's Shop</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="showNav()">
+        <i class="fas fa-bars fa-3x"></i>
+      </a>
+
+      <div id="info_box">
+        <div id="information_box">
+          <p class="info_label">Name</p>
+          <p class="info_item" id="user_name">Guest</p>
+
+          <p class="info_label">Address</p>
+          <p class="info_item" id="user_addr">Rose Street,Mandalay</p>
+
+          <p class="info_label">Country</p>
+          <p class="info_item" id="user_country">Myanmar</p>
+
+          <p class="info_label">Payment Options</p>
+          <p class="info_item" id="user_payment">Visa / Master</p>
+        </div>
+        <div id="cart_box">
+            <p>You have added these items to your Cart</p>
+            <div class="cart_list">
+                <img src="images/products/iphone_12.png" alt="iphone" class="cart_items">
+                <p class="info_label">iPhone 12 ($ 1,000)</p>
+            </div>
+        </div>
+
+        <div id="wishlist_box">
+            <p>You have listed these items to your Wishlist</p>
+            <div class="wishlist">
+                <img src="images/products/imac.png" alt="iphone" class="cart_items">
+                <p class="info_label">iMac ($ 1,500)</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/2d96acc290.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/info_page.js"></script>
+</html>

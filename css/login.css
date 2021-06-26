@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222831;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/login_bg.jpg");
+  font-family: "Roboto", sans-serif;
+}
+
+form {
+  border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 10% 35%;
+  width: 300px;
+}
+
+img {
+  height: 60px;
+  margin: 30px 0px 0px 120px;
+  width: 60px;
+}
+
+#welcome_msg {
+  text-align: center;
+  margin: 10px 0px 20px;
+}
+
+.input_div {
+  margin: 0px 0px 50px 35px;
+}
+
+.input_box {
+  border: none;
+  border-bottom: 2px solid #707070;
+  background: transparent;
+  color: white;
+  margin-left: 5px;
+  padding: 12px 10px;
+}
+::placeholder {
+  color: white;
+  letter-spacing: 0.75px;
+  opacity: 0.75;
+}
+
+#error_msg {
+  color: #f96c6c;
+  display: none;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#sub_text {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 5px;
+  margin-left: 35px;
+}
+
+#login_btn {
+  background: #ffffff;
+  border-radius: 10px;
+  border-style: none;
+  color: #393e46;
+  font-size: 15px;
+  text-shadow: 1px 1px 3px #666666;
+  margin: 10px 0px 50px 35px;
+  padding: 8px 15px;
+}
+
+#login_btn:hover {
+  background: #393e46;
+  color: #ffffff;
+}
+#signup_but{
+  color: aqua;
+}
+#signup_but:hover{
+  color: purple;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: #000;
+  }
+  form {
+    margin: 0%;
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+  }
+  img,
+  #sub_text,
+  .btn {
+    margin-left: 0px;
+  }
+}

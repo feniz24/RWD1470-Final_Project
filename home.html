@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav>
+        <a href="home.html"><img id="logo" src="images/logo_black.png" alt="logo"/></a>
+            <div id="nav_box">
+                <ul class="flex_container" id="nav_links" >
+                    <li class="nav_items"><a href="#">Home</a></li>
+                    <li class="nav_items dropdown"><a>Shop<i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content shop_lists">
+                            <li><a href="#">Apple <i class="fab fa-apple"></i></a></li>
+                            <li><a href="#">Android <i class="fab fa-android"></i></a></li>
+                            <li><a href="#">Coming Soon...</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_items"><a href="#">Blog</a></li>
+                    <li class="nav_items">
+                        <input type="text" id="search_box"placeholder="Search..">
+                        <button type="submit" class="search_but"><i class="fa fa-search"></i></button>
+                    </li>
+                    <li class="nav_items"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li class="nav_items dropdown"><img id="user_icon" src="images/guest.png" alt="">
+                        <ul class="dropdown-content user_icon_drop">
+                            <li><a class="user_contents" id="login_but" href="login.html">Log In</a></li>
+                            <li><a class="user_contents user_login" id="view_profile" href="info_page.html">View Profile</a></li>
+                            <li><a class="user_contents user_login" id="logout_btn"  href="login.html" onclick="logout()">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        <a href="javascript:void(0);" class="icon" onclick="showNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <!-- Banner -->
+    <section>
+        <div class="banner">
+            <p>Let us Modernize <br> Your Place</p>
+        <button>Explore Now</button>
+        </div>
+    </section>
+
+    <!-- Promotion Area -->
+    <section id="promo">
+        <div class="promo_div" id="promo_left">
+            <p>Promo: 10% off with coupon Code <br>
+            "REVO21"</p>
+        </div>
+
+        <div class="promo_div" id="promo_right">
+            <p>Door-to-Door Delivery Avaliable<br>
+            Fastest, Convenient, Safest</p>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section>
+        <ul class="product_category">
+            <li onclick="createAppleDiv()">Apple  <i class="fab fa-apple"></i></li>
+            <li onclick="createAndroidDiv()">Android <i class="fab fa-android"></i></li>
+        </ul>
+        <div class="products_flex" id="products_container" >
+            <div class="products_flex" id="products_div">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="footer">
+            <div class="footer_div">
+                <img id="footer_logo" src="images/logo_white.png" alt="">
+            </div>
+            <div class="footer_div">
+                <p class="footer_text" id="slogan">"Be more productive <br> with us"</p>
+            </div>
+            <div class="footer_div" id="contact">
+                <p class="footer_text">Contact Us</p>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook  contact_logo"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram  contact_logo"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter contact_logo"></i></i></a>     
+                <a href="https://www.google.com/"><i class="far fa-envelope  contact_logo"></i></a>
+            </div>
+        </div>
+    </section>
+  </body>
+
+<script
+    src="https://kit.fontawesome.com/2d96acc290.js"
+    crossorigin="anonymous">
+</script>
+<script src="js/products_data.js"></script>
+<script src="js/home.js"></script>
+</html>

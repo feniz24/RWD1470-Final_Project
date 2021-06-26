@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Naviagation */
+nav {
+  background-color: #fbfbfd;
+}
+
+#logo{
+  left: 43%;
+  position: relative;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#user_icon {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.flex_container {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+a {
+  color: #222831;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+a:hover,
+.product_category li:hover,
+.product_category li:active {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+a:active {
+  text-decoration: underline #707070;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  z-index: 1;  
+}
+
+.dropdown-content li{
+  margin: 35% 0%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#search_box {
+  border: none;
+  border-radius: 3px;
+  padding: 12px;
+}
+.search_but {
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.user_icon_drop{
+  background-color: #fbfbfd;
+  padding: 0px 20px 0px 10px;
+}
+
+#view_profile:hover, #logout_btn:hover{
+  color: #bcbcc0;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+#logout_btn:hover{
+  color: #ea4335;
+}
+
+.icon {
+  color: #222831;
+  display: none;
+}
+/* Banner */
+.banner {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.banner p {
+  font-size: 3.3rem;
+  font-weight: bold;
+  text-shadow: 4px 0px #dce3ed;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: left;
+  position: absolute;
+  top: 42%;
+  left: 10%;
+}
+
+.banner button {
+  border-radius: 6px;
+  background: #222831;
+  color: #fbfbfd;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px 15px 12px 15px;
+  position: absolute;
+  left: 10%;
+  top: 65%;
+}
+
+.banner button:hover {
+  background: #fbfbfd;
+  color: #222831;
+}
+
+/* Promotion */
+#promo {
+  height: 400px;
+  position: relative;
+}
+.promo_div {
+  display: inline;
+  height: 400px;
+  width: 50%;
+  position: absolute;
+}
+
+#promo_left {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/promo_black.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #222831;
+}
+.promo_div:hover{
+  width: 52%;
+}
+
+#promo_right {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/promo_white.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  left: 50%;
+}
+
+.promo_div p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15%;
+}
+
+/* Products */
+.product_category {
+  color: #222831;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.product_category li {
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 2% 5%;
+}
+.product_category li:hover{
+  font-size: 2.2rem;
+}
+
+.products_flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.product {
+  color: #222831;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 25%;
+  margin: 2% 1%;
+}
+
+.product:hover{
+  transform: scale(1.15)
+}
+
+.product img {
+  cursor: pointer;
+  height: 70%;
+  width: 70%;
+}
+
+#product_price {
+  font-weight: bold;
+  margin-top: 3%;
+}
+#products_container{
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  align-content: space-around;
+  background-color: #222831;
+  color: #ffffff;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  padding-top: 2%;
+}
+.footer_div {
+  width: 33%;
+}
+#footer_logo {
+  width: 30%;
+}
+#slogan {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 45px;
+}
+.footer_text {
+  font-size: 1.25rem;
+  padding-top: 7%;
+  text-align: left;
+  text-transform: uppercase;
+}
+#contact {
+  margin-left: 5%;
+  text-align: left;
+}
+.contact_logo {
+  margin: 5% 5% 0% 0%;
+  font-size: 1.5rem;
+}
+#contact a {
+  color: white;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+.fa-instagram:hover {
+  color: #833ab4;
+}
+.fa-twitter:hover {
+  color: #00acee;
+}
+.fa-envelope:hover {
+  color: #ea4335;
+}
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+  #nav_box {
+    overflow: hidden;
+    position: relative;
+  }
+  .flex_container{
+    display: none;
+  }
+  #nav_box li{
+    display: block;
+    text-align: center;
+    margin: 2% 15%;
+  }
+  .flex_container a{
+    border-bottom: 0.5px solid #222831;
+  }
+  .icon{
+    display: block;
+    font-size: 3.6rem;
+    position: absolute;
+    left: 39px;
+    top: 20px;
+  }
+  .dropdown-content{
+    color: #222831;
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+  }
+ .dropdown-content li{
+  margin: 0%;
+ }
+ .shop_lists, #user_icon,#nav_box .fas{
+   display: none;
+ }
+  .banner p{
+    font-size: 3rem;
+    top: 35%;
+    left: 5%;
+  }
+  .banner button{
+    left: 5%;
+    top: 55%;
+  }
+  .promo_div p{
+    padding-top: 30%;
+  }
+  .product_category li {
+    font-size: 1.5rem;
+  }
+  #slogan {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+  .footer_text{
+    padding-top: 2%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #logo{
+    width: 75px;
+  }
+  .icon{
+    font-size: 3rem;
+    left: 30px;
+    top: 10px;
+  }
+  .flex_container a{
+    font-size: 1rem;
+  }
+  .banner{
+    height: 500px;
+  }
+  .banner p{
+    font-size: 1.8rem;
+  }
+  .banner button{
+    font-size: 15px;
+  }
+  #promo{
+    height: 300px;
+  }
+  .promo_div{
+    height: 250px;
+  }
+  .promo_div p {
+    font-size: 0.8rem;
+    padding-top: 20%;
+    padding-left: 10px;
+    text-align: left;
+  }
+  .product_category li {
+    font-size: 1.3rem;
+  }
+  .product{
+    font-size: 1.2rem;
+    width: 35%;
+  }
+  #slogan {
+    font-size: 0.5rem;
+    line-height: 20px;
+  }
+  .footer_text {
+    font-size: 0.3rem;
+  }
+  .contact_logo{
+    font-size: 0.8rem;
+  }
+}
